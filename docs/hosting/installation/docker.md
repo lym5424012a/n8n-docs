@@ -1,33 +1,33 @@
 ---
-contentType: tutorial
+内容类型：教程
 ---
 
-# Docker Installation
+#Docker 安装
 
-n8n recommends using [Docker](https://www.docker.com/) for most self-hosting needs. It provides a clean, isolated environment, avoids operating system and tooling incompatibilities, and makes database and environment management simpler.
+Docker](https://www.docker.com/)。它提供了一个干净、隔离的环境，避免了操作系统和工具之间的不兼容问题，并使数据库和环境管理更加简单。
 
-You can also use n8n in Docker with [Docker Compose](/hosting/installation/server-setups/docker-compose.md). You can find Docker Compose configurations for various architectures in the [n8n-hosting repository](https://github.com/n8n-io/n8n-hosting).
+您也可以在 Docker 中使用 n8n，配合Docker Compose](/hosting/installation/server-setups/docker-compose.md)。您可在n8n-hosting 仓库中找到适用于各种架构的 Docker Compose 配置https://github.com/n8n-io/n8n-hosting.
 
 --8<-- "_snippets/self-hosting/warning.md"
 
-You can also follow along with our video guide here:
+您也可以在此处观看我们的视频指南：
 
 <div class="video-container">
 <iframe width="840" height="472.5" src="https://www.youtube.com/embed/6ET3G7GiqZA?si=mwCKbtyLqNCRc2pa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Prerequisites
+##先决条件
 
-Before proceeding, install Docker:
+请在继续之前安装 Docker：
 
-* [Docker Desktop](https://docs.docker.com/get-docker/) is available for Mac, Windows, and Linux. Docker Desktop includes the Docker Engine and Docker Compose.
-* [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/linux/) are also available as separate packages for Linux. Use this for Linux machines without a graphical environment or when you don't want the Docker Desktop UI.
+* [Docker Desktop](https://docs.docker.com/get-docker/)适用于Mac、Windows和Linux。Docker Desktop 包含 Docker 引擎和 Docker Compose。
+[https://docs.docker.com/compose/install/linux/]也作为独立软件包适用于 Linux。请在无图形界面的 Linux 机器上，或不希望使用 Docker Desktop 用户界面时，选用此方式。
 
---8<-- "_snippets/self-hosting/installation/latest-next-version.md"
+--8<-- “_snippets/self-hosting/installation/latest-next-version.md”
 
-## Starting n8n
+##启动n8n
 
-From your terminal, run the following commands, replacing the `<YOUR_TIMEZONE>` placeholders with [your timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List):
+从您的终端运行以下命令，将<YOUR_TIMEZONE>`占位符替换为您的时区]
 
 ```shell
 docker volume create n8n_data
